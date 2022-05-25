@@ -18,19 +18,20 @@ string change(int num, int n) {
 string solution(int n, int t, int m, int p) {
     string answer = "";
     string s = "";
-    // ¸ğµç ÀÚ¸®ÀÇ ¼ö¸¦ Áø¼ö·Î ¹Ù²ã Ç¥Çö
+    // ëª¨ë“  ìë¦¬ì˜ ìˆ˜ë¥¼ ì§„ìˆ˜ë¡œ ë°”ê¿” í‘œí˜„
     for (int i = 0; i < m * t; i++) {
         s = s + change(i, n);
     }
 
-    // s¿¡ ´ã±ä Áø¼ö Ç¥ÇöÁß pÀÎ ÀÚ¸®¿¡ ÇØ´çÇÏ´Â °Í¸¸ »Ì±â
-    // ¸»ÇÑ È½¼ö°¡ tÀÌ¸é Á¾·á°¡ µÈ´Ù.
+    // sì— ë‹´ê¸´ ì§„ìˆ˜ í‘œí˜„ì¤‘ pì¸ ìë¦¬ì— í•´ë‹¹í•˜ëŠ” ê²ƒë§Œ ë½‘ê¸°
+    // ë§í•œ íšŸìˆ˜ê°€ tì´ë©´ ì¢…ë£Œê°€ ëœë‹¤.
     int cnt = 0;
     for (int i = 0; i < s.length(); i++) {
         if (cnt > t)break;
         if (i % m + 1 == p) {
             answer = answer + s[i];
             cnt++;
+   
         }
     }
 
