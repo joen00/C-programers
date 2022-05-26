@@ -35,7 +35,6 @@ void make_string(int k, string s) {
 	return;
 }
 
-
 int main()
 {
 	int T, K;
