@@ -38,7 +38,7 @@ int bfs(int x, int y, int num, int m, int n, vector<vector<int>> picture) {
 }
 
 
-// Àü¿ª º¯¼ö¸¦ Á¤ÀÇÇÒ °æ¿ì ÇÔ¼ö ³»¿¡ ÃÊ±âÈ­ ÄÚµå¸¦ ²À ÀÛ¼ºÇØÁÖ¼¼¿ä.
+// ì „ì—­ ë³€ìˆ˜ë¥¼ ì •ì˜í•  ê²½ìš° í•¨ìˆ˜ ë‚´ì— ì´ˆê¸°í™” ì½”ë“œë¥¼ ê¼­ ì‘ì„±í•´ì£¼ì„¸ìš”.
 vector<int> solution(int m, int n, vector<vector<int>> picture) {
     int number_of_area = 0;
     int max_size_of_one_area = 0;
@@ -56,7 +56,6 @@ vector<int> solution(int m, int n, vector<vector<int>> picture) {
             }
         }
     }
-
     vector<int> answer(2);
     answer[0] = number_of_area;
     answer[1] = max_size_of_one_area;
